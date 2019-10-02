@@ -1,0 +1,403 @@
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Added to new cache: Evgen Petrov
+Added to new cache: Egor Kozak
+Added to new cache: Marin Sidorenko
+Added to new cache: Kate Robinson
+Added to new cache: Mike Johnson
+Added to new cache: Petro Danilenko
+Added to new cache: Egor Losev
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 622.6599ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 1044.5651ms
+Request finished in 1696.0685ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Evgen Petrov
+Added to the cache: Evgen Petrov
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 52.9692ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 63.914ms
+Request finished in 74.0848ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Egor Kozak
+Added to the cache: Egor Kozak
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.096ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 46.4821ms
+Request finished in 57.9232ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Marin Sidorenko
+Added to the cache: Marin Sidorenko
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 640.1746ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 655.9126ms
+Request finished in 680.9736ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Kate Robinson
+Added to the cache: Kate Robinson
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.1961ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 67.3521ms
+Request finished in 79.3241ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Mike Johnson
+Added to the cache: Mike Johnson
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.7144ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 81.3109ms
+Request finished in 94.9407ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Not in the cache: Petro Danilenko
+Added to the cache: Petro Danilenko
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Petro Danilenko
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.0013ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 50.2299ms
+Request finished in 65.9696ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Petro Danilenko
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Not in the cache: Egor Losev
+Added to the cache: Egor Losev
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Petro Danilenko
+Students in new cache: Egor Losev
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.4186ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 48.5959ms
+Request finished in 59.6979ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Petro Danilenko
+Students in the initial cache: Egor Losev
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Not in the cache: Evgen Petrov
+Added to the cache: Evgen Petrov
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Petro Danilenko
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.5525ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 49.8514ms
+Request finished in 59.4504ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Petro Danilenko
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Not in the cache: Egor Kozak
+Added to the cache: Egor Kozak
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Petro Danilenko
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 41.1135ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 50.087ms
+Request finished in 67.8529ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home/2  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home/2
+Cached Student: Egor Kozak
+Students in cache: Petro Danilenko
+Students in cache: Egor Losev
+Students in cache: Evgen Petrov
+Students in cache: Egor Kozak
+Students in cache: Kate Robinson
+Students in cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.07ms.
+Executing ObjectResult, writing value of type 'LRUCache.Models.Student'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 1289.195ms
+Request finished in 2479.6522ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Petro Danilenko
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Not in the cache: Marin Sidorenko
+Added to the cache: Marin Sidorenko
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Petro Danilenko
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Mike Johnson
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 145.4901ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 170.5508ms
+Request finished in 215.026ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Added to new cache: Evgen Petrov
+Added to new cache: Egor Kozak
+Added to new cache: Marin Sidorenko
+Added to new cache: Kate Robinson
+Added to new cache: Mike Johnson
+Added to new cache: Petro Danilenko
+Added to new cache: Egor Losev
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 431.4743ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 644.794ms
+Request finished in 1088.3059ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Evgen Petrov
+Added to the cache: Evgen Petrov
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Marin Sidorenko
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.7083ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 73.9571ms
+Request finished in 83.9453ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home/5  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home/5
+Cached Student: Mike Johnson
+Students in cache: Egor Losev
+Students in cache: Evgen Petrov
+Students in cache: Marin Sidorenko
+Students in cache: Kate Robinson
+Students in cache: Mike Johnson
+Students in cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.6649ms.
+Executing ObjectResult, writing value of type 'LRUCache.Models.Student'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 122.1003ms
+Request finished in 201.675ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Marin Sidorenko
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Egor Kozak
+Added to the cache: Egor Kozak
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Kate Robinson
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.5738ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 74.4094ms
+Request finished in 90.6491ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home/2  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home/2
+Cached Student: Egor Kozak
+Students in cache: Egor Losev
+Students in cache: Evgen Petrov
+Students in cache: Egor Kozak
+Students in cache: Kate Robinson
+Students in cache: Mike Johnson
+Students in cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.9663ms.
+Executing ObjectResult, writing value of type 'LRUCache.Models.Student'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 68.8599ms
+Request finished in 85.9677ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:44314/api/home  
+Route matched with {action = "Get", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller LRUCache.Controllers.HomeController (LRUCache).
+Executing action method LRUCache.Controllers.HomeController.Get (LRUCache) - Validation state: Valid
+Method Get api/home
+Students in the initial cache: Egor Losev
+Students in the initial cache: Evgen Petrov
+Students in the initial cache: Egor Kozak
+Students in the initial cache: Kate Robinson
+Students in the initial cache: Mike Johnson
+Students in the initial cache: Petro Danilenko
+Not in the cache: Marin Sidorenko
+Added to the cache: Marin Sidorenko
+Cache Count: 6
+Cache Capacity: 6
+Students in new cache: Egor Losev
+Students in new cache: Evgen Petrov
+Students in new cache: Egor Kozak
+Students in new cache: Marin Sidorenko
+Students in new cache: Mike Johnson
+Students in new cache: Petro Danilenko
+Executed action method LRUCache.Controllers.HomeController.Get (LRUCache), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 99.3227ms.
+Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LRUCache.Models.Student, LRUCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+Executed action LRUCache.Controllers.HomeController.Get (LRUCache) in 113.4401ms
+Request finished in 154.3285ms 200 application/json; charset=utf-8

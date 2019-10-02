@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "Evgen",
+    "LastName": "Petrov",
+    "University": "KPI"
+  },
+  {
+    "Id": 2,
+    "FirstName": "Egor",
+    "LastName": "Kozak",
+    "University": "KNU"
+  },
+  {
+    "Id": 3,
+    "FirstName": "Marin",
+    "LastName": "Sidorenko",
+    "University": "KPI"
+  },
+  {
+    "Id": 4,
+    "FirstName": "Kate",
+    "LastName": "Robinson",
+    "University": "KNU"
+  },
+  {
+    "Id": 5,
+    "FirstName": "Mike",
+    "LastName": "Johnson",
+    "University": "KNU"
+  },
+  {
+    "Id": 6,
+    "FirstName": "Petro",
+    "LastName": "Danilenko",
+    "University": "KPI"
+  },
+  {
+    "Id": 7,
+    "FirstName": "Egor",
+    "LastName": "Losev",
+    "University": "KNU"
+  }
+]
