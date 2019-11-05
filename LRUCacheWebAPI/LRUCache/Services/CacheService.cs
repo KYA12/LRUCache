@@ -10,7 +10,7 @@ namespace LRUCache.Services
 {
     public class CacheService:ICacheService
     {
-        IConfiguration configuration;
+        private readonly IConfiguration configuration;
         private readonly int capacity;
         public CacheService(IConfiguration con)
         {
@@ -18,7 +18,7 @@ namespace LRUCache.Services
             capacity = Convert.ToInt32(configuration["CacheCapacity"]);
             cache = new LRUCache<int, Student>(capacity);
         }
-        LRUCache<int, Student> cache;
+        private readonly LRUCache<int, Student> cache;
         public LRUCache<int,Student> GetCache()
         {
             return cache;

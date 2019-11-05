@@ -14,22 +14,24 @@ namespace LRUCache.Services
             fileName);
             if (!File.Exists(path))
             {
-                List<Student> students = new List<Student>();
-                students.Add(new Student { Id = 1, FirstName = "Petro", LastName = "Sidorenko", University = "KPI" });
-                students.Add(new Student { Id = 2, FirstName = "Ivan", LastName = "Petrenko", University = "KNU" });
-                students.Add(new Student { Id = 3, FirstName = "Evgen", LastName = "Kovalenko", University = "KPI" });
-                students.Add(new Student { Id = 4, FirstName = "Ivan", LastName = "Boyko", University = "KNU" });
-                students.Add(new Student { Id = 5, FirstName = "Andriy", LastName = "Kovpak", University = "KPI" });
-                students.Add(new Student { Id = 6, FirstName = "Ivan", LastName = "Petrenko", University = "KNU" });
-                students.Add(new Student { Id = 7, FirstName = "Olena", LastName = "Petrenko", University = "KPI" });
-                students.Add(new Student { Id = 8, FirstName = "Evgen", LastName = "Zapashniy", University = "KNU" });
-                students.Add(new Student { Id = 9, FirstName = "Mykola", LastName = "Tarasov", University = "KPI" });
+                List<Student> students = new List<Student>
+                {
+                    new Student { Id = 1, FirstName = "Petro", LastName = "Sidorenko", University = "KPI" },
+                    new Student { Id = 2, FirstName = "Ivan", LastName = "Petrenko", University = "KNU" },
+                    new Student { Id = 3, FirstName = "Evgen", LastName = "Kovalenko", University = "KPI" },
+                    new Student { Id = 4, FirstName = "Ivan", LastName = "Boyko", University = "KNU" },
+                    new Student { Id = 5, FirstName = "Andriy", LastName = "Kovpak", University = "KPI" },
+                    new Student { Id = 6, FirstName = "Ivan", LastName = "Petrenko", University = "KNU" },
+                    new Student { Id = 7, FirstName = "Olena", LastName = "Petrenko", University = "KPI" },
+                    new Student { Id = 8, FirstName = "Evgen", LastName = "Zapashniy", University = "KNU" },
+                    new Student { Id = 9, FirstName = "Mykola", LastName = "Tarasov", University = "KPI" }
+                };
                 Write(fileName, students);
             }
         }
         public static List<Student> Read(string fileName)
         {
-            List<Student> students = new List<Student>();
+            List<Student> students;
             var path = Path.Combine(Directory.GetCurrentDirectory(), 
             fileName);
             string jsonResult;
