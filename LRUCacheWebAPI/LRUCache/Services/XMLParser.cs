@@ -6,10 +6,9 @@ using LRUCache.Models;
 
 namespace LRUCache.Services
 {
-    public class XMLParser : IParser
+    public class XMLParser
     {
-        public XMLParser() { }
-        public void CreateIfNotExists(string fileName)
+        public static void CreateIfNotExists(string fileName)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(),
                fileName);
@@ -28,7 +27,7 @@ namespace LRUCache.Services
                 Write(fileName, students);
             }
         }
-        public List<Student> Read(string fileName)
+        public static List<Student> Read(string fileName)
         {
             List<Student> students = new List<Student>();
             var path = Path.Combine(Directory.GetCurrentDirectory(),
@@ -40,7 +39,7 @@ namespace LRUCache.Services
                 return students;
             }
         }
-        public void Write(string fileName, List<Student> Students)
+        public static void Write(string fileName, List<Student> Students)
         {
             var path = Path.Combine(
             Directory.GetCurrentDirectory(),

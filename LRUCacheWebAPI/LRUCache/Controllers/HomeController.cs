@@ -16,12 +16,12 @@ namespace LRUCache.Controllers
     [ApiController]
     public class HomeController : Controller
     {
-        IConfiguration configuration;
-        private ILogger logger;
-        private string fileNameJson;
-        private string fileNameXML;
-        private ICacheService service;
-        LRUCache<int, Student> cache;
+        private readonly IConfiguration configuration;
+        private readonly ILogger logger;
+        private readonly string fileNameJson;
+        private readonly string fileNameXML;
+        private readonly ICacheService service;
+        private readonly LRUCache<int, Student> cache;
         private readonly string dataType;
 
         public HomeController(IConfiguration iConfiguration, ILoggerFactory loggerFactory, ICacheService iService)
@@ -30,13 +30,11 @@ namespace LRUCache.Controllers
             fileNameJson = configuration["FileNameJson"];
             fileNameXML = configuration["FileNameXML"];
             dataType = configuration["DataType"];
-            JsonParser jsonReadWrite = new JsonParser();
-            XMLParser xmlReadWrite = new XMLParser();
             service = iService;
             if (dataType == "json")
-                jsonReadWrite.CreateIfNotExists(fileNameJson);
+                JsonParser.CreateIfNotExists(fileNameJson);
             if (dataType == "xml")
-                xmlReadWrite.CreateIfNotExists(fileNameXML);
+                XMLParser.CreateIfNotExists(fileNameXML);
             logger = loggerFactory.CreateLogger("FileLogger");
             cache = service.GetCache();
         }
@@ -46,13 +44,11 @@ namespace LRUCache.Controllers
         {
             logger.LogInformation($"Method Get api/home");
             List<Student> students = new List<Student>();
-            JsonParser jsonReadWrite = new JsonParser();
-            XMLParser xmlReadWrite = new XMLParser();
             List<Student> cachedStudents = new List<Student>();
             if (dataType == "json")
-                students = jsonReadWrite.Read(fileNameJson);
+                students = JsonParser.Read(fileNameJson);
             if (dataType == "xml")
-                students = xmlReadWrite.Read(fileNameXML);
+                students = XMLParser.Read(fileNameXML);
             if (students == null) return NotFound();
             List<Student> newStudents = new List<Student>();
 
@@ -106,8 +102,6 @@ namespace LRUCache.Controllers
             logger.LogInformation($"Method Get api/home/{id}");
             List<Student> students = new List<Student>();
             List<Student> cachedStudents = new List<Student>();
-            JsonParser jsonReadWrite = new JsonParser();
-            XMLParser xmlReadWrite = new XMLParser();
             Student student = new Student();
            
             if (cache.Count != 0)
@@ -132,9 +126,9 @@ namespace LRUCache.Controllers
                         
                 }
                 if (dataType == "json")
-                    students = jsonReadWrite.Read(fileNameJson);
+                    students = JsonParser.Read(fileNameJson);
                 if (dataType == "xml")
-                    students = xmlReadWrite.Read(fileNameXML);
+                    students = XMLParser.Read(fileNameXML);
                 int ind = students.FindIndex(x => x.Id == id);
                 if (ind == -1) return NotFound();
                 student = students[ind];
@@ -148,9 +142,9 @@ namespace LRUCache.Controllers
                 return Ok(student);
             }
             if (dataType == "json")
-                students = jsonReadWrite.Read(fileNameJson);
+                students = JsonParser.Read(fileNameJson);
             if (dataType == "xml")
-                students = xmlReadWrite.Read(fileNameXML);
+                students = XMLParser.Read(fileNameXML);
             int index = students.FindIndex(x => x.Id == id);
             if (index == -1) return NotFound();
             student = students[index];
@@ -169,13 +163,11 @@ namespace LRUCache.Controllers
         public IActionResult Post([FromBody] Student student)
         {
             List<Student> students = new List<Student>();
-            JsonParser jsonReadWrite = new JsonParser();
-            XMLParser xmlReadWrite = new XMLParser();
             List<Student> cached = new List<Student>();
             if (dataType == "json")
-                students = jsonReadWrite.Read(fileNameJson);
+                students = JsonParser.Read(fileNameJson);
             if (dataType == "xml")
-                students = xmlReadWrite.Read(fileNameXML);
+                students = XMLParser.Read(fileNameXML);
             logger.LogInformation($"Method POST api/home");
             cached = cache.GetAllValues();
             for (int i = 0; i < cache.Count; i++)
@@ -203,9 +195,9 @@ namespace LRUCache.Controllers
                             logger.LogInformation($"Students in cache: {s.FirstName} {s.LastName}");
                         }
                         if (dataType == "json")
-                            jsonReadWrite.Write(fileNameJson, students);
+                            JsonParser.Write(fileNameJson, students);
                         if (dataType == "xml")
-                            xmlReadWrite.Write(fileNameXML, students);
+                            XMLParser.Write(fileNameXML, students);
                     }
                     return Ok(student);
                 }
@@ -229,9 +221,9 @@ namespace LRUCache.Controllers
             cache.Add(student.Id, student);
             logger.LogInformation($"Added to cache Student: {student.FirstName}, {student.LastName}");
             if (dataType == "json")
-                jsonReadWrite.Write(fileNameJson, students);
+                JsonParser.Write(fileNameJson, students);
             if (dataType == "xml")
-                xmlReadWrite.Write(fileNameXML, students);
+                XMLParser.Write(fileNameXML, students);
             foreach (Student s in cache.GetAllValues())
             {
                 logger.LogInformation($"Students in cache: {s.FirstName} {s.LastName}");
@@ -244,21 +236,19 @@ namespace LRUCache.Controllers
         {
             List<Student> students = new List<Student>();
             Student student = new Student();
-            JsonParser jsonReadWrite = new JsonParser();
             List<Student> cached = new List<Student>();
-            XMLParser xmlReadWrite = new XMLParser();
             if (dataType == "json")
-                students = jsonReadWrite.Read(fileNameJson);
+                students = JsonParser.Read(fileNameJson);
             if (dataType == "xml")
-                students = xmlReadWrite.Read(fileNameXML);
+                students = XMLParser.Read(fileNameXML);
             int index = students.FindIndex(x => x.Id == id);
             if (index == -1) return NotFound();
             student = students[index];
             students.RemoveAt(index);
             if (dataType == "json")
-                jsonReadWrite.Write(fileNameJson, students);
+                JsonParser.Write(fileNameJson, students);
             if (dataType == "xml")
-                xmlReadWrite.Write(fileNameXML, students);
+                XMLParser.Write(fileNameXML, students);
             logger.LogInformation($"Method Delete api/home/{id}");
             logger.LogInformation($"Deleted Student from file: {student.FirstName}, {student.LastName}");
             foreach (Student s in cache.GetAllValues())
